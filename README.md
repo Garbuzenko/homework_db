@@ -3,21 +3,25 @@
 Команды для создания БД
 ![База данных](https://u.netology.ngcdn.ru/backend/uploads/lms/tasks/homework_solutions/hashed_file/9/1678559/Untitled_Diagram.drawio.png)
 
-***Вход в PSQL
+***Вход в PSQL:
+
 psql -U postgres 
 
 
-***Создание БД
+***Создание БД:
+
 CREATE DATABASE netology
     WITH 
     OWNER = postgres;
 
 \q
 
-***Вход в БД
+***Вход в БД:
+
 psql -U postgres -d netology
 
-***Создание таблиц
+***Создание таблиц:
+
 create table gener (
 id serial primary key,
 name varchar(50)
