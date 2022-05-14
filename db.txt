@@ -1,8 +1,3 @@
-# homework_db
-
-Команды для создания БД
-![База данных](https://u.netology.ngcdn.ru/backend/uploads/lms/tasks/homework_solutions/hashed_file/9/1678559/Untitled_Diagram.drawio.png)
-
 psql -U postgres 
 
 CREATE DATABASE netology
