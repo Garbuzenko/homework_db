@@ -24,7 +24,7 @@ psql -U postgres -d netology
 
 create table gener (
 id serial primary key,
-name varchar(50)
+name varchar(50) unique
 );
 
 create table singer (
@@ -38,7 +38,7 @@ create table albom (
 id serial primary key,
 name varchar(100), 
 singer_id integer references singer(id),
-year date
+year integer check(year > 1000 AND year < 2100)
 );
 
 create table track (
